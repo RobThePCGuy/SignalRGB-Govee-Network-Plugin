@@ -55,6 +55,7 @@ export function Initialize(){
 	govee = new GoveeProtocol(controller.ip, controller.supportDreamView, controller.supportRazer);
 
 	govee.setDeviceState(true);
+	device.pause(250);
 	govee.SetRazerMode(true);
 }
 
@@ -1744,6 +1745,6 @@ const GoveeDeviceLibrary = {
 		state: 1,
 		supportRazer: false,
 		supportDreamView: false,
-		ledCount: 1
+		ledCount: 10
 	},
 };
