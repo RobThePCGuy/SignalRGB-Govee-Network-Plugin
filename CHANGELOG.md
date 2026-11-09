@@ -7,6 +7,11 @@ All notable changes to this plugin are documented here. The format follows
 ## [Unreleased]
 
 ### Fixed
+- **H61E5 COB Strip Light Pro now lights per LED.** It drives 10 LEDs
+  instead of one static color, and the plugin waits briefly after turning a
+  device on before it starts streaming colors. Contributed by
+  [@drumslave-git](https://github.com/drumslave-git) in #3, tested on their
+  own H61E5.
 - **Cross-subnet Check IP discovery.** The plugin now owns one unconnected UDP
   `4002` listener and sends manual scans to device UDP `4001`, matching Govee's
   fixed reply-port behavior. Replies from arbitrary device source ports are
